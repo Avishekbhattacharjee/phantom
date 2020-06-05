@@ -25,30 +25,20 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
 
-PM_START_TEXT = """
-
-
-┈┈┈┈╱▔▔▔▔╲┈┈┈┈
-┈┈┈▕▕╲┊┊╱▏▏┈┈┈
-┈┈┈▕▕▂╱╲▂▏▏┈┈┈
-┈┈┈┈╲┊┊┊┊╱┈┈┈┈
-┈┈┈┈▕╲▂▂╱▏┈┈┈┈
-╱▔▔▔▔┊┊┊┊▔▔▔▔╲
-HOI    {}, MY NAME IS {} !
-
-I AM A GROUP MANAGER BOT MAINTAINED BY 
-
-[THIS LEGEND](tg://user?id={}).
-
-HIT HELP FOR COMMANDS  /help
-
-I AM COMPLETELY OPEN SOURCE
-
-MY SOURCE CODE IS AVAILABLE TO YOU
-
-[HERE](https://github.com/leobrownlee/phantom)
-
+PM_START_TEXT = f"""
+Hey there! my name is *{dispatcher.bot.first_name}*. If you have any questions on how to use me,
+I am a Powerful Group Management Bot With My Amazing Features. If You Need Any Help Type /help
+Wanna Add me to your Group? Just click the button below!
 """
+
+buttons = [[
+InlineKeyboardButton(text="Add to Group 👥", url="t.me/MandakiniProBot?startgroup=true"),
+InlineKeyboardButton(text="Updates 📢", url="https://t.me/MandakiniNews")
+InlineKeyboardButton(text="❓Support Group", url="https://t.me/MandakiniSupport")    
+                  ]]
+
+buttons += [[InlineKeyboardButton(text="❓ My Commands ❔", callback_data="help_back")]]
+
 
 HELP_STRINGS = """
 
