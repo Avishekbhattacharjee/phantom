@@ -298,6 +298,7 @@ def __chat_settings__(chat_id, user_id):
 
 
 __help__ = """
+Contact @MandakiniSupport For Gban Request
 *Admin only:*
  - /gbanstat <on/off/yes/no>: Will disable the effect of global bans on your group, or return your current settings.
 
