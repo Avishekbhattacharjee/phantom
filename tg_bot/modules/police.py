@@ -34,6 +34,7 @@ def police(bot: Bot, update: Update):
 
 
 __help__ = """
+Specially Thanks To @SaitamaRobot For This Modules
 - /police : 🚔
 """
 
