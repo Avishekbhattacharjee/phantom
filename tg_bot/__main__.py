@@ -39,7 +39,7 @@ InlineKeyboardButton(text="❓Support Group", url="https://t.me/MandakiniSupport
 
 buttons += [[InlineKeyboardButton(text="❓ My Commands ❔", callback_data="help_back")]]
 
-
+"""
 HELP_STRINGS = """
 
 Hello! my name *{}*.
